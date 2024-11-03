@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow">  
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>B_ LAUNCH Fullpage</title>
+    <!-- SNS 공유하기 시 꼭 필요 -->
+    <meta property="og:image" name="og_image" content="img/BK_200831_FullPage_1_2.jpg"/>
+    <meta property="og:title" name="og_title" content="B_ LAUNCH"/>
+    <meta property="og:description" name="og_desc" content="B_ LAUNCH"/>
+    <meta property="og:type" content="website"/>
+    <!-- //SNS 공유하기 시 꼭 필요 -->
+
+    <!-- 스크롤 애니메이트 CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <!-- //스크롤 애니메이트 CSS -->
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script> <!-- 풀페이지 플러그인 -->
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script> <!-- BX슬라이더 플러그인 -->
+    <script type="text/javascript" src="js/scrolla.jquery.min.js"></script> <!-- 스크롤 애니메이션 플러그인 -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!-- Facebook Pixel Code -->
+    <!-- WiseLog Code -->
+    <!-- Google Tag Manager -->
+</head>
+<body>
+    
+    <!-- 여기부터 복사해서 붙여주세요 -->
+    <!-- 200831 -->
+    <!-- <head>
+        <-- SNS 공유하기 시 꼭 필요 --
+        <meta property="og:image" name="og_image" content="img/BK_200831_FullPage_1_2.jpg"/>
+        <meta property="og:title" name="og_title" content="B_ LAUNCH"/>
+        <meta property="og:description" name="og_desc" content="B_ LAUNCH"/>
+        <meta property="og:type" content="website"/>
+        <-- //SNS 공유하기 시 꼭 필요 --
+        
+        <-- 스크롤 애니메이트 CSS --
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <-- //스크롤 애니메이트 CSS --
+        
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/fullpage.js"></script> <-- 풀페이지 플러그인 --
+        <script type="text/javascript" src="js/jquery.bxslider.min.js"></script> <-- BX슬라이더 플러그인 --
+        <script type="text/javascript" src="js/scrolla.jquery.min.js"></script> <!-- 스크롤 애니메이션 플러그인 --
+        <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+        
+    </head> -->
+    
+    <!-- 폰트 -->
+    <style>
+        /* notokr */
+        @font-face { font-family: 'NotoSans_kr_Bold'; font-weight: 800; font-style: normal; src: url(https://img.ssfshop.com/font/NotoSans_kr_Bold_4e9abb70b982577f8802d326e5006b17.eot), url(https://img.ssfshop.com/font/NotoSans_kr_Bold_84cf469fb96f31d4b8d896e79325014d.woff) format('woff'), url(https://img.ssfshop.com/font/NotoSans_kr_Bold_073dba1021899e96cb959ebe406f707a.woff2) format('woff2'), url(https://img.ssfshop.com/font/NotoSans_kr_Bold_d661b21d0a948cad31a0de8bd63d060c.ttf) format('truetype')}
+        @font-face { font-family: 'NotoSans_kr_Medium'; font-weight: 600; font-style: normal; src: url(https://img.ssfshop.com/font/NotoSans_kr_Medium_c1f84afcd04a474c37b8a573e2f7a44c.eot), url(https://img.ssfshop.com/font/NotoSans_kr_Medium_81bd542f397d1c5560442ae96d9f5f14.woff) format('woff'), url(https://img.ssfshop.com/font/NotoSans_kr_Medium_6a273c1578aaeb244be785ebed570c75.woff2) format('woff2'), url(https://img.ssfshop.com/font/NotoSans_kr_Medium_0c7a6400db018d56d1e7becbb5744128.ttf) format('truetype')}
+        @font-face { font-family: 'NotoSans_kr_Regular'; font-weight: 400; font-style: normal; src: url(https://img.ssfshop.com/font/NotoSans_kr_Regular_bae006813b0a476a15cc0306c573ddac.eot), url(https://img.ssfshop.com/font/NotoSans_kr_Regular_031547cb477885094f0fb06c678c135b.woff) format('woff'), url(https://img.ssfshop.com/font/NotoSans_kr_Regular_a288961d62681aeff38489afad616c28.woff2) format('woff2'), url(https://img.ssfshop.com/font/NotoSans_kr_Regular_7a70d8c1df2527611971a40d007c2c28.ttf) format('truetype')}
+        @font-face { font-family: 'NotoSans_kr_Light'; font-weight: 100; font-style: normal; src: url(https://img.ssfshop.com/font/NotoSans_kr_Light_cd2b5e732aa33c73340acd82a5406304.eot), url(https://img.ssfshop.com/font/NotoSans_kr_Light_2ea9b0e3609fed1eb1ddc97c177c70cb.woff) format('woff'), url(https://img.ssfshop.com/font/NotoSans_kr_Light_251f03d8302b2bb85bf86f14a7bc7057.woff2) format('woff2'), url(https://img.ssfshop.com/font/NotoSans_kr_Light_bff7374cfbadb765f300ace765c0ba8e.ttf) format('truetype')}
+
+        /* ssf */
+        @font-face { font-family: 'SSF_Bold'; font-weight: 600; font-style: normal; src: url(https://img.ssfshop.com/font/SSF_Bold_fedf588eb82cf1e9ab65a806e608aaf2.eot), url(https://img.ssfshop.com/font/SSF_Bold_1993c2e51511563c287aa8de0fb61f99.woff) format('woff'), url(https://img.ssfshop.com/font/SSF_Bold_4960fdbee36c3a0fb57ee0c76c53f813.woff2) format('woff2'), url(https://img.ssfshop.com/font/SSF_Bold_1744ea394f50573c9bbb8e71711f8c47.ttf) format('truetype')}
+        @font-face { font-family: 'SSF_Regular'; font-weight: 400; font-style: normal; src: url(https://img.ssfshop.com/font/SSF_Regular_ca6a7e60092b1bd7cbf9f05eba7f4247.eot), url(https://img.ssfshop.com/font/SSF_Regular_7c35a4976825b2b71bcafdd4f6d42364.woff) format('woff'), url(https://img.ssfshop.com/font/SSF_Regular_58ffefbbb13f2ff8c03b86e019c1b72e.woff2) format('woff2'), url(https://img.ssfshop.com/font/SSF_Regular_92d35593d19d01621468abf8b05d796c.ttf) format('truetype')}
+        @font-face { font-family: 'SSF_Light'; font-weight: 200; font-style: normal; src: url(https://img.ssfshop.com/font/SSF_Light_b4e56d9eda6cb62707871694d21d37ef.eot), url(https://img.ssfshop.com/font/SSF_Light_c8daa55a7b77ae664152ae21af2659d8.woff) format('woff'), url(https://img.ssfshop.com/font/SSF_Light_1d81c3edec04fa9b0fb233c05f67a771.woff2) format('woff2'), url(https://img.ssfshop.com/font/SSF_Light_0f70e9cb53296a15af13188e22e2842b.ttf) format('truetype')}
+        @font-face { font-family: 'SSF_Thin'; font-weight: 100; font-style: normal; src: url(https://img.ssfshop.com/font/SSF_Thin_cfb1501be09e09b5320138a52f166482.eot), url(https://img.ssfshop.com/font/SSF_Thin_f519155b54aa5c226adc4ce66247cad9.woff) format('woff'), url(https://img.ssfshop.com/font/SSF_Thin_fda487aaa89f92fbb1b5da5a8794ac0e.woff2) format('woff2'), url(https://img.ssfshop.com/font/SSF_Thin_b3a382adaf6a3925c97d5d899e4bd082.ttf) format('truetype')}
+
+    </style>
+    <!-- //폰트 -->
+    
+    <style>
+        /* 기본 CSS */
+        html,body{width:100%; height:100%;}
+        html{overflow-x:hidden; overflow-y:hidden; box-sizing:border-box;}
+        body{font-size:10px;}
+        * { margin:0px; padding:0px;}
+        ul,li,ol{ list-style:none;}
+        a{text-decoration:none;}
+        
+        /* ie 용 스크롤 바 */
+        html {
+            scrollbar-arrow-color: #efefef;
+            scrollbar-Track-Color: #efefef;
+            scrollbar-base-color: #dfdfdf;
+            scrollbar-Face-Color: #dfdfdf;
+            scrollbar-3dLight-Color: #dfdfdf;
+            scrollbar-DarkShadow-Color: #dfdfdf;
+            scrollbar-Highlight-Color: #dfdfdf;
+            scrollbar-Shadow-Color: #dfdfdf
+        }
+        /* //ie 용 스크롤 바 */
+        
+        /* Chrome, Safari용 스크롤 바 */
+        ::-webkit-scrollbar {width: 0px; height: 0px;  }
+        ::-webkit-scrollbar-button:start:decrement,
+        ::-webkit-scrollbar-button:end:increment {display: none; width: 12px;height: 12px; background: url() rgba(0,0,0,0)}
+        ::-webkit-scrollbar-track {     background: rgba(0,0,0,0); }
+        ::-webkit-scrollbar-thumb {  background: rgba(0,0,0,0);  }
+        /* //Chrome, Safari용 스크롤 바 */
+        
+        #BK-online-200831 #fullpage{width:100%; height:100vh;}
+        #BK-online-200831 .section{position:relative; width:100%; height:100vh;}
+        #BK-online-200831 img{width:100%; display:block;}
+        /* //기본 CSS */
+        
+        /* 마우스 스크롤 */
+        #BK-online-200831 .mouse_scroll1{position: absolute; width:29px; left:50%; top:91%; margin-left:-14.5px;
+            animation-duration:2s; display:none;
+            -webkit-animation-duration:2s;
+            animation-name: MoveDown2;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count:infinite;
+        }
+        @keyframes MoveDown2 {
+            0%{margin-top:-2%}
+            50%{margin-top:-0%}
+            100%{margin-top:-2%}
+        }
+        -webkit-@keyframes MoveDown2 {
+            0%{margin-top:-2%}
+            50%{margin-top:-0%}
+            100%{margin-top:-2%}
+        }
+        /* //마우스 스크롤 */
+        
+        /* 고정 메뉴바 */
+        #BK-online-200831 .topMenu{background-color:#fff; position:fixed; top:0; left:0; width:100%; height:70px; z-index:500}
+        #BK-online-200831 .menu_img1{position:absolute; top:0; left:0; width:207px}
+        #BK-online-200831 .menu_img2{position:absolute; top:0; right:0; width:312px}
+        #BK-online-200831 .menu_SNSimg{position:absolute; top:0; right:0; width:312px; display:none}
+        #BK-online-200831 .SnsBtn01{position:absolute; top:14px; right:285px; width:40px}
+        #BK-online-200831 .SnsBtn02{position:absolute; top:14px; right:227px; width:40px}
+        #BK-online-200831 .SnsBtn03{position:absolute; top:14px; right:166px; width:40px}
+        #BK-online-200831 .SnsBtn04{position:absolute; top:14px; right:101px; width:40px}
+        #BK-online-200831 .SnsBtn05{position:absolute; top:17px; right:51px; width:35px}
+        #BK-online-200831 .layer_clip {display:none; position:fixed; top:50%; left:50%; z-index:100; width:203px; height:203px; margin-top:-100px; margin-left:-100px; background:url("img/bg_layer_clip.png") no-repeat bottom center}
+        #BK-online-200831 .layer_clip span {display:block; margin-top:135px; font-family:"SSF_Bold"; font-size:16px; color:#fff; text-align:center}
+        /* //고정 메뉴바 */
+        
+        /* 텍스트 공통 CSS */
+        #BK-online-200831 .textAll{letter-spacing:-0.01em; line-height:100%;}
+        #BK-online-200831 .fontBM{font-family: 'SSF_Bold', 'NotoSans_kr_Medium', Arial}
+        #BK-online-200831 .fontBR{font-family: 'SSF_Bold', 'NotoSans_kr_Regular', Arial}
+        #BK-online-200831 .fontRM{font-family: 'SSF_Regular', 'NotoSans_kr_Medium', Arial}
+        #BK-online-200831 .fontRR{font-family: 'SSF_Regular', 'NotoSans_kr_Regular', Arial}
+        /* //텍스트 공통 CSS */
+        
+        /* 페이지 별 공통 CSS */
+        #BK-online-200831 .page{position:relative; width:100%; height:calc(100%) !important; overflow:hidden;}
+        /* //페이지 별 공통 CSS */
+        
+        /* 첫번째 페이지 */
+        #BK-online-200831 .page1{background:url('img/BK_200831_FullPage_1_1.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .introBox1{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; opacity:1; transition:all 1.5s; transition-delay:0.1s; background:url('img/BK_200831_FullPage_1_1.jpg') no-repeat center center; background-size:cover; }
+        #BK-online-200831 .logoimg1_1{position:absolute; top:50%; left:50%; width:97px; margin-top:-42px; margin-left:-48.5px; opacity:0;}
+        #BK-online-200831 .logoimg1_2{position:absolute; top:50%; left:50%; width:97px; margin-top:-42px; margin-left:-48.5px; opacity:0;}
+        
+        #BK-online-200831 .fadeBox1_1{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; opacity:0; transition:all 1.5s; transition-delay:0.1s; background:url('img/BK_200831_FullPage_1_2.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .fadeBox1_2{position:absolute; top:0; right:0; width:50%; height:calc(100%) !important; opacity:0; transition:all 1.5s; transition-delay:0.1s; transform: translate(100%, 0); -webkit-transform: translate(100%, 0); background:url('img/BK_200831_FullPage_1_3.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .fadelogoBox1_1{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; opacity:0; transition:all 1.5s; transition-delay:0.1s;}
+        #BK-online-200831 .fadelogoimg1_1{position:absolute; top:50%; left:50%; width:97px; margin-top:-42px; margin-left:-48.5px;}
+        
+        #BK-online-200831 .fadeIn1{opacity:1;}
+        #BK-online-200831 .fadeInRight1{opacity:1; transform: translate(0, 0); -webkit-transform: translate(0, 0);}
+        #BK-online-200831 .fadeOut1{opacity:0;}
+        /* //첫번째 페이지 */
+        
+        /* 두번째 페이지 */
+        #BK-online-200831 .zoomBox2{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; opacity:1; transition:all 0.1s; transition-delay:0.1s; transform: scale(1, 1); -webkit-transform: scale(1, 1); background:url('img/BK_200831_FullPage_2.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .text_wrap2{position:absolute; top:53.6%; left:50%; width:100%; margin-top:-5.3%; margin-left:-50%; z-index:60;}
+        #BK-online-200831 .zoomlogoimg2{width:97px; margin:0 auto; padding-bottom:1.6%;}
+        #BK-online-200831 .text2_1{color:#fff; text-align:center; font-size:1.041666vw;}
+        
+        #BK-online-200831 .zoomIn2{opacity:1; transform: scale(1.2, 1.2); -webkit-transform: scale(1.2, 1.2); transition:all 7s;}
+        /* //두번째 페이지 */
+        
+        /* 세번째 페이지 */
+        #BK-online-200831 .videoImg3{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important;}
+        #BK-online-200831 .videoBtn3{position:absolute; top:49%; left:50%; width:90px; margin-left:-45px;}
+        
+        /********** 동영상 배경 이미지 CSS **********/
+        #BK-online-200831 .videoBG3{background:url('img/BK_200831_FullPage_3.jpg') no-repeat center center; background-size:cover;}
+        /********** 동영상 배경 이미지 CSS **********/
+        
+        /********** 동영상 팝업 박스 CSS **********/
+        #BK-online-200831 .videoPopUp3_popup{position:absolute; top:0; left:0; width:100%; height: calc(100%) !important; z-index:9999; display:none;}
+        #BK-online-200831 .videoBox3_popup{position:relative; width:100%; height: calc(100%) !important;}
+        #BK-online-200831 .vodBox3_popup{position:relative; width:100%; overflow:hidden; height: calc(100%) !important;}
+        #BK-online-200831 .vodIn3_popup{position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(1, 1, 1, 1);}
+        
+        #BK-online-200831 .videoPopUp_closeBtn3{position:fixed; bottom:10%; right:60px; width:30px; z-index:9999;}
+        /********** 동영상 팝업 박스 CSS **********/
+        /* //세번째 페이지 */
+        
+        /* 네번째 페이지 */
+        #BK-online-200831 .zoomBox4{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; opacity:1; transition:all 0.1s; transition-delay:0.1s; transform: scale(1, 1); -webkit-transform: scale(1, 1); background:url('img/BK_200831_FullPage_4.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .text_wrap4{position:absolute; top:39.3%; left:54.5%; width:100%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); z-index:60;}
+        #BK-online-200831 .text_wrap4_1{position:absolute; top:0; left:10%; width:30%; z-index:60;}
+        #BK-online-200831 .text4_1{color:#111; text-align:left; font-size:3.125vw; padding-bottom:3%;}
+        #BK-online-200831 .text4_2{color:#111; text-align:left; font-size:3.125vw; padding-bottom:3%;}
+        #BK-online-200831 .text4_3{color:#111; text-align:left; font-size:3.125vw; padding-bottom:7.5%;}
+        #BK-online-200831 .text4_4{color:#111; text-align:left; font-size:1.041666vw;}
+        
+        #BK-online-200831 .text_wrap4_2{position:absolute; top:0; right:10%; width:30%; z-index:60;}
+        #BK-online-200831 .text4_5{color:#111; text-align:left; font-size:1.041666vw; padding-top:0.5%; padding-bottom:2%;}
+        #BK-online-200831 .text4_6{color:#111; text-align:left; font-size:1.041666vw; padding-bottom:2%;}
+        #BK-online-200831 .text4_7{color:#111; text-align:left; font-size:1.041666vw;}
+        
+        #BK-online-200831 .zoomIn4{opacity:1; transform: scale(1.2, 1.2); -webkit-transform: scale(1.2, 1.2); transition:all 7s;}
+        /* //네번째 페이지 */
+        
+        /* 다섯번째 페이지 */
+        #BK-online-200831 .page5{background:url('img/BK_200831_FullPage_5.jpg') no-repeat center center; background-size:cover;}
+        
+        #BK-online-200831 .text_wrap5{position:absolute; top:54%; left:64.6%; width:100%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); z-index:60;}
+        #BK-online-200831 .text5_1{color:#fff; text-align:left; font-size:1.041666vw; padding-bottom:0.5%;}
+        #BK-online-200831 .text5_2{color:#fff; text-align:left; font-size:1.041666vw;}
+        
+        #BK-online-200831 .gifWrap5{position:absolute; top:29%; left:0; width:100%;}
+        #BK-online-200831 .gifBox5{position:absolute; top:52%; left:64.6%; width:20.833333%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%);}
+        /* //다섯번째 페이지 */
+        
+        /* 여섯번째 페이지 */
+        #BK-online-200831 .imgBox6{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; background:url('img/BK_200831_FullPage_6.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .slideBox01_6{position:absolute; right:0; top:0; width:50%; height:calc(100%) !important; opacity:1; transition:all 1.5s; transition-delay:0.1s; transform: translate(100%, 0); -webkit-transform: translate(100%, 0); background:url("img/BK_200831_FullPage_6_1.jpg") no-repeat center center; background-size:cover; z-index:5;}
+        #BK-online-200831 .slideBox01_6 > .bx-wrapper{width:calc(100%) !important; height:calc(100%) !important;}
+        #BK-online-200831 .slideBox01_6 > .bx-wrapper > .bx-viewport{height:calc(100%) !important;}
+        #BK-online-200831 .slideBox01_6 .slide01{height:calc(100%) !important;}
+        #BK-online-200831 .slideBox01_6 .slide01 .slide06_1{height:calc(100%) !important; background:url("img/BK_200831_FullPage_6_1.jpg") no-repeat center center; background-size:cover;}
+        #BK-online-200831 .slideBox01_6 .slide01 .slide06_2{height:calc(100%) !important; background:url("img/BK_200831_FullPage_6_2.jpg") no-repeat center center; background-size:cover;}
+        
+        #BK-online-200831 .text_wrap6{position:absolute; top:43.5%; left:54.5%; width:100%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); z-index:60;}
+        #BK-online-200831 .text_wrap6_1{position:absolute; top:0; left:10%; width:30%; z-index:60;}
+        #BK-online-200831 .text6_1{color:#fff; text-align:left; font-size:3.125vw; padding-bottom:2%;}
+        #BK-online-200831 .text6_3{color:#fff; text-align:left; font-size:3.125vw; padding-bottom:7.5%;}
+        #BK-online-200831 .text6_4{color:#fff; text-align:left; font-size:1.041666vw;}
+        
+        #BK-online-200831 .text_wrap6_2{position:absolute; top:0; right:10%; width:30%; z-index:60;}
+        #BK-online-200831 .text6_5{color:#fff; text-align:left; font-size:1.041666vw; padding-top:1.5%; padding-bottom:2%;}
+        #BK-online-200831 .text6_6{color:#fff; text-align:left; font-size:1.041666vw; padding-bottom:2%;}
+        #BK-online-200831 .text6_7{color:#fff; text-align:left; font-size:1.041666vw;}
+        
+        #BK-online-200831 .fadeInRight6{opacity:1; transform: translate(0, 0); -webkit-transform: translate(0, 0);}
+        /* //여섯번째 페이지 */
+        
+        /* 일곱번째 페이지 */
+        #BK-online-200831 .imgBox7{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; background:url('img/BK_200831_FullPage_7.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .text_wrap7{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; z-index:60;}
+        #BK-online-200831 .text_wrap7_1{position:absolute; bottom:8.5%; left:6.25%; width:100%; z-index:60;}
+        #BK-online-200831 .logoimg7{width:3.125vw; padding-bottom:1.5%;}
+        #BK-online-200831 .text7_1{color:#111; text-align:left; font-size:1.041666vw;}
+        
+        #BK-online-200831 .text_wrap7_2{position:absolute; top:53.6%; left:76%; width:17%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); background-color:#111; padding:3.125%; z-index:60;}
+        #BK-online-200831 .text7_2{color:#fff; text-align:left; font-size:0.9375vw; padding-bottom:5.5%;}
+        #BK-online-200831 .text7_3{color:#fff; text-align:left; font-size:1.979166vw; padding-bottom:10.5%;}
+        #BK-online-200831 .text7_4{color:#cdcdcd; text-align:left; font-size:1.041666vw; padding-bottom:3.5%;}
+        #BK-online-200831 .text7_5{color:#cdcdcd; text-align:left; font-size:1.041666vw; padding-bottom:3.5%;}
+        #BK-online-200831 .text7_6{color:#cdcdcd; text-align:left; font-size:1.041666vw; padding-bottom:3.5%;}
+        #BK-online-200831 .text7_7{color:#fff; text-align:left; font-size:0.9375vw; padding-top:12%; padding-bottom:5.5%;}
+        #BK-online-200831 .text7_8{color:#fff; text-align:left; font-size:1.979166vw; padding-bottom:3.5%;}
+        #BK-online-200831 .text7_9{color:#fff; text-align:left; font-size:1.979166vw; padding-bottom:10.5%;}
+        #BK-online-200831 .text7_10{color:#cdcdcd; text-align:left; font-size:1.041666vw; padding-bottom:3.5%;}
+        #BK-online-200831 .text7_11{color:#cdcdcd; text-align:left; font-size:1.041666vw; padding-bottom:16.5%;}
+        #BK-online-200831 .text7_12{color:#fff; text-align:left; font-size:1.041666vw; padding-top:16.5%; border-top:1px solid #fff;}
+        /* //일곱번째 페이지 */
+        
+        /* 여덟번째 페이지 */
+        #BK-online-200831 .imgBox8{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; background:url('img/BK_200831_FullPage_8.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .section8_wrap{position:absolute; top:0; left:0; width:100%; height: calc(100%) !important; opacity:0; transition:all 1.5s; transition-delay:0.1s; z-index:500;}
+        #BK-online-200831 .section8_bg{position:absolute; top:52%; left:0; width:100%; transform:translateY(-50%); -webkit-transform:translateY(-50%); opacity:1; z-index:200; transition:all 1.5s; transition-delay:0.1s;}
+        #BK-online-200831 .slideBox02{width:119.791666%;}
+        
+        #BK-online-200831 .text_wrap8{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; z-index:60;}
+        #BK-online-200831 .text_wrap8_1{position:absolute; bottom:7%; left:6.25%; width:100%; z-index:60; opacity:1; transition:all 1s; transition-delay:0.1s;}
+        #BK-online-200831 .logoimg8{width:3.125vw; padding-bottom:1.5%;}
+        #BK-online-200831 .text8_1{color:#fff; text-align:left; font-size:1.041666vw;}
+        
+        #BK-online-200831 .text_wrap8_2{position:absolute; bottom:7%; left:6.25%; width:100%; z-index:60; opacity:0; transition:all 1s; transition-delay:0.1s;}
+        #BK-online-200831 .text8_2{color:#fff; text-align:left; font-size:1.041666vw;}
+        
+        #BK-online-200831 .fadeIn8{opacity:1;}
+        #BK-online-200831 .fadeIn8_2{opacity:1;}
+        #BK-online-200831 .fadeOut8{opacity:0;}
+        /* //여덟번째 페이지 */
+        
+        /* 아홉번째 페이지 */
+        #BK-online-200831 .imgBox9{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; background:url('img/BK_200831_FullPage_9_1.jpg') no-repeat center center; background-size:cover; }
+        #BK-online-200831 .fadeBox9_1{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important; background:url('img/BK_200831_FullPage_9_1.jpg') no-repeat center center; background-size:cover; }
+        #BK-online-200831 .fadeBox9_2{position:absolute; top:0; left:0; width:100%; height:calc(100%) !important;  opacity:0; transition:all 1s; transition-delay:0.1s; background:url('img/BK_200831_FullPage_9_2.jpg') no-repeat center center; background-size:cover; }
+        
+        #BK-online-200831 .text_wrap9{position:absolute; top:52.6%; left:50%; width:100%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); z-index:60;}
+        #BK-online-200831 .logoimg9{width:5.677083vw; margin:0 auto; padding-bottom:3.3%;}
+        #BK-online-200831 .text9_1{text-align:center;}
+        #BK-online-200831 .text9_1 > a{width:7.5vw; margin:0 auto; font-size:1.041666vw; color:#fff; padding:0.5% 1%; border:1px solid #fff; box-sizing:border-box;}
+        
+        #BK-online-200831 .fadeIn9{opacity:1;}
+        /* //아홉번째 페이지 */
+        
+    </style>
+    
+    <!-- 풀페이지 CSS -->
+    <style>
+        /****************************풀페이지 css******************************************/
+
+        html.fp-enabled,
+        .fp-enabled body {
+            margin: 0;
+            padding: 0;
+            overflow:hidden;
+
+            /*Avoid flicker on slides transitions for mobile phones #336 */
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        .fp-section {
+            position: relative;
+            -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+            -moz-box-sizing: border-box; /* <=28 */
+            box-sizing: border-box;
+        }
+        .fp-slide {
+            float: left;
+        }
+        .fp-slide, .fp-slidesContainer {
+            height: 100%;
+            display: block;
+        }
+        .fp-slides {
+            z-index:1;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+            transition: all 0.3s ease-out;
+        }
+        .fp-section.fp-table, .fp-slide.fp-table {
+            display: table;
+            table-layout:fixed;
+            width: 100%;
+        }
+        .fp-tableCell {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+        }
+        .fp-slidesContainer {
+            float: left;
+            position: relative;
+        }
+        .fp-controlArrow {
+            -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+            -moz-user-select: none; /* mozilla browsers */
+            -khtml-user-select: none; /* webkit (konqueror) browsers */
+            -ms-user-select: none; /* IE10+ */
+            position: absolute;
+            z-index: 4;
+            top: 50%;
+            cursor: pointer;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            margin-top: -38px;
+            -webkit-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+        .fp-controlArrow.fp-prev {
+            left: 120px;
+            width: 0;
+            border-width: 38.5px 34px 38.5px 0;
+            border-color: transparent #fff transparent transparent;
+        }
+        .fp-controlArrow.fp-next {
+            right: 120px;
+            border-width: 38.5px 0 38.5px 34px;
+            border-color: transparent transparent transparent #fff;
+        }
+        .fp-scrollable {
+            overflow: hidden;
+            position: relative;
+        }
+        .fp-scroller{
+            overflow: hidden;
+        }
+        .iScrollIndicator{
+            border: 0 !important;
+        }
+        .fp-notransition {
+            -webkit-transition: none !important;
+            transition: none !important;
+        }
+        #fp-nav {
+            position: fixed;
+            z-index: 100;
+            margin-top: -32px;
+            top: 50%;
+            opacity: 1;
+            transform: translate3d(0,0,0);
+            -webkit-transform: translate3d(0,0,0);
+        }
+        #fp-nav.fp-right {
+            right: 17px;
+        }
+        #fp-nav.fp-left {
+            left: 17px;
+        }
+        .fp-slidesNav{
+            position: absolute;
+            z-index: 4;
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            left: 0 !important;
+            right: 0;
+            margin: 0 auto !important;
+        }
+        .fp-slidesNav.fp-bottom {
+            bottom: 17px;
+        }
+        .fp-slidesNav.fp-top {
+            top: 17px;
+        }
+        #fp-nav ul,
+        .fp-slidesNav ul {
+        margin: 0;
+        padding: 0;
+        }
+        #fp-nav ul li,
+        .fp-slidesNav ul li {
+            display: block;
+            width: 14px;
+            height: 13px;
+            margin: 7px;
+            position:relative;
+        }
+        .fp-slidesNav ul li {
+            display: inline-block;
+        }
+        #fp-nav ul li a,
+        .fp-slidesNav ul li a {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        #fp-nav ul li a.active span,
+        .fp-slidesNav ul li a.active span,
+        #fp-nav ul li:hover a.active span,
+        .fp-slidesNav ul li:hover a.active span{
+            height: 12px;
+            width: 12px;
+            margin: -6px 0 0 -6px;
+            border-radius: 100%;
+        }
+        #fp-nav ul li a span,
+        .fp-slidesNav ul li a span {
+            border-radius: 50%;
+            position: absolute;
+            z-index: 1;
+            height: 4px;
+            width: 4px;
+            border: 0;
+            background: #333;
+            left: 50%;
+            top: 50%;
+            margin: -2px 0 0 -2px;
+            -webkit-transition: all 0.1s ease-in-out;
+            -moz-transition: all 0.1s ease-in-out;
+            -o-transition: all 0.1s ease-in-out;
+            transition: all 0.1s ease-in-out;
+        }
+        #fp-nav ul li:hover a span,
+        .fp-slidesNav ul li:hover a span{
+            width: 10px;
+            height: 10px;
+            margin: -5px 0px 0px -5px;
+        }
+        #fp-nav ul li .fp-tooltip {
+            position: absolute;
+            top: -2px;
+            color: #fff;
+            font-size: 14px;
+            font-family: arial, helvetica, sans-serif;
+            white-space: nowrap;
+            max-width: 220px;
+            overflow: hidden;
+            display: block;
+            opacity: 0;
+            width: 0;
+            cursor: pointer;
+        }
+        #fp-nav ul li:hover .fp-tooltip,
+        #fp-nav.fp-show-active a.active + .fp-tooltip {
+            -webkit-transition: opacity 0.2s ease-in;
+            transition: opacity 0.2s ease-in;
+            width: auto;
+            opacity: 1;
+        }
+        #fp-nav ul li .fp-tooltip.fp-right {
+            right: 20px;
+        }
+        #fp-nav ul li .fp-tooltip.fp-left {
+            left: 20px;
+        }
+        .fp-auto-height.fp-section,
+        .fp-auto-height .fp-slide,
+        .fp-auto-height .fp-tableCell{
+            height: auto !important;
+        }
+
+        .fp-responsive .fp-auto-height-responsive.fp-section,
+        .fp-responsive .fp-auto-height-responsive .fp-slide,
+        .fp-responsive .fp-auto-height-responsive .fp-tableCell {
+            height: auto !important;
+        }
+
+        /*Only display content to screen readers*/
+        .fp-sr-only{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        /****************************풀페이지 css******************************************/
+    </style>
+    <!-- //풀페이지 CSS -->
+    
+    <script type="text/javascript">
+        $(window).on('load', function(){
+            
+            full();
+            
+            /* BX슬라이드 스크립트 부분 */
+            var s1 = $('.slide01').bxSlider({
+                mode: 'fade',
+                auto: true,
+                pager: false,
+                controls: false,
+                autoHover: false,
+                pause:3000,
+                speed:1000
+            });
+            
+            var s2 = $('.slide02').bxSlider({
+                ticker: true,
+                speed:30000
+            });
+            /* //BX슬라이드 스크립트 부분 */
+            
+            /* SNS 공유하기 버튼 */
+            $('.snsBtn1').mouseenter(function(){
+                $('.menu_SNSimg').css({'display':'block'});
+            });
+            $('.menu_SNSimg').mouseleave(function(){
+                $(this).css({'display':'none'});
+            });
+            /* //SNS 공유하기 버튼 */
+            
+            /****** 텍스트 나타나는 효과 ******/
+            $('.animate__animated').scrolla({
+                mobile: false,
+                once: false
+            }); 
+            /****** //텍스트 나타나는 효과 ******/
+            
+            /* 풀페이지 옵션 스크립트 */
+            function full(){
+                var mypage = new fullpage('#fullpage',{
+                    
+                    licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+                    normalScrollElements: '.PopBox',  /*스크롤허용부분*/
+                    keyboardScrolling: true, /*키보드이동 허용*/
+                    lockAnchors: false, /*앵커 지우는거*/
+                    v2compatible: true,
+                    menu: '#menu',
+                    
+                    /* 현재 페이지 효과 */
+                    afterLoad: function(anchorLink, index){
+                        
+                        /****** 텍스트 나타나는 효과 ******/
+                        $('.animate__animated').scrolla({
+                            mobile: false,
+                            once: false
+                        }); 
+                        /****** //텍스트 나타나는 효과 ******/ 
+                        
+                        //addClass 에 딜레이 줄수 있게 해주는 구문
+                        $.fn.queueAddClass = function(className) {
+                            this.queue('fx', function(next) {
+                                $(this).addClass(className);
+                                next();
+                            });
+                            return this;
+                        };
+                        
+                        /****** 200921 수정 ******/ 
+                        if(index == 1){//첫번째 페이지
+                            $('.mouse_scroll1.scroll1').delay(5000).fadeIn();
+                            
+                            $('.introBox1').delay(1700).queueAddClass('fadeOut1');
+                            $('.fadeBox1_1').delay(1800).queueAddClass('fadeIn1');
+                            $('.fadelogoBox1_1').delay(1800).queueAddClass('fadeIn1');
+                            $('.fadeBox1_2').delay(3500).queueAddClass('fadeInRight1');
+                            
+                            $('.zoomBox2').removeClass('zoomIn2');
+                        }
+                        else if(index == 2){//두번째 페이지
+                            $('.mouse_scroll1.scroll2').delay(1300).fadeIn();
+                            
+                            $('.zoomBox2').delay(1300).queueAddClass('zoomIn2');
+                            
+                            $('.introBox1').removeClass('fadeOut1');
+                            $('.fadeBox1_1').removeClass('fadeIn1');
+                            $('.fadelogoBox1_1').removeClass('fadeIn1');
+                            $('.fadeBox1_2').removeClass('fadeInRight1');
+                        }
+                        else if(index == 3){//세번째 페이지
+                            $('.mouse_scroll1.scroll3').delay(1000).fadeIn();
+                           
+                            /****** 동영상 팝업 ******/
+                            $('.videoBG3').click(function(){
+                                $('.videoPopUp3_popup').show();
+                                $('html, body').css({overflow:'hidden', height:'100%'})
+                                $('.videoPopUp3_popup').on('scroll touchmove mousewheel', function(event) {
+                                    event.preventDefault();
+                                    event.stopPropagation();
+                                    return false;
+                                }, false);
+                                
+                                fullpage_api.setKeyboardScrolling(false);
+                                document.getElementById('video-player3_2').setAttribute('src','https://www.youtube.com/embed/VY3Q2A4zss8?rel=0&loop=1&autoplay=1&playlist=VY3Q2A4zss8&mute=0');
+                            });
+                            $('.videoPopUp_closeBtn3, .videoPopUp3_popup').click(function(){
+                                $('.videoPopUp3_popup').hide();
+                                
+                                fullpage_api.setKeyboardScrolling(true);
+                                document.getElementById('video-player3_2').setAttribute('src','https://www.youtube.com/embed/VY3Q2A4zss8?rel=0&loop=1&autoplay=0&playlist=VY3Q2A4zss8&mute=1');
+                            });
+                            /****** 동영상 팝업 ******/
+                            
+                            $('.zoomBox2').removeClass('zoomIn2');
+                            
+                            $('.zoomBox4').removeClass('zoomIn4');
+                            
+                        }
+                        else if(index == 4){//네번째 페이지
+                            $('.mouse_scroll1.scroll4').delay(1800).fadeIn();
+                            
+                            $('.zoomBox4').delay(2200).queueAddClass('zoomIn4');
+                            
+                        }
+                        else if(index == 5){//다섯번째 페이지
+                            $('.mouse_scroll1.scroll5').delay(1000).fadeIn();      
+						    
+                            $('.zoomBox4').removeClass('zoomIn4');
+                            
+                            $('.slideBox01_6').removeClass('fadeInRight6');
+                        }
+                        else if(index == 6){//여섯번째 페이지
+                            $('.mouse_scroll1.scroll6').delay(2200).fadeIn();
+                            
+                            $('.slideBox01_6').delay(3500).queueAddClass('fadeInRight6');
+                            
+                            $('.section8_wrap').removeClass('fadeIn8');
+                            $('.text_wrap8_2').removeClass('fadeIn8_2');
+                            $('.text_wrap8_1').removeClass('fadeOut8');
+                        }
+                        else if(index == 7){//일곱번째 페이지
+                            $('.mouse_scroll1.scroll8').delay(1800).fadeIn();
+                            
+                            $('.slideBox01_6').removeClass('fadeInRight6');
+                            
+                            $('.section8_wrap').delay(1500).queueAddClass('fadeIn8');
+                            $('.text_wrap8_2').delay(1500).queueAddClass('fadeIn8_2');
+                            $('.text_wrap8_1').delay(1700).queueAddClass('fadeOut8');
+                            
+                            $('.fadeBox9_2').removeClass('fadeIn9');
+                        }
+                        else if(index == 8){//여덟번째 페이지
+                            
+                            $('.fadeBox9_2').delay(1500).queueAddClass('fadeIn9');
+                            
+                            $('.section8_wrap').removeClass('fadeIn8');
+                            $('.text_wrap8_2').removeClass('fadeIn8_2');
+                            $('.text_wrap8_1').removeClass('fadeOut8');
+                        }
+                        deleteLog = true;
+                        
+                    },
+                    /* //현재 페이지 효과 */
+                    
+                    /* 현재 페이지 떠난후 효과 */
+                    onLeave: function(origin, destination, direction){
+                        var leavingSection = this;
+                        
+                        if(origin == 1){
+                            $('.mouse_scroll1').fadeOut();
+                            
+                            $('.introBox1').removeClass('fadeOut1');
+                            $('.fadeBox1_1').removeClass('fadeIn1');
+                            $('.fadelogoBox1_1').removeClass('fadeIn1');
+                            $('.fadeBox1_2').removeClass('fadeInRight1');
+                            
+                            $('.zoomBox2').removeClass('zoomIn2');
+                            
+                        }else if(origin == 2){
+                            $('.mouse_scroll1').fadeOut();
+                            
+                            $('.introBox1').removeClass('fadeOut1');
+                            $('.fadeBox1_1').removeClass('fadeIn1');
+                            $('.fadelogoBox1_1').removeClass('fadeIn1');
+                            $('.fadeBox1_2').removeClass('fadeInRight1');
+                            
+                            $('.zoomBox2').removeClass('zoomIn2');
+                            
+                        }else if(origin == 3){
+                            $('.mouse_scroll1').fadeOut();
+                            
+                            $('.zoomBox2').removeClass('zoomIn2');
+                            
+                            $('.zoomBox4').removeClass('zoomIn4');
+                            
+                        }else if(origin == 4){
+                            $('.mouse_scroll1').fadeOut();
+                            
+                            $('.zoomBox4').removeClass('zoomIn4');
+                            
+                        }else if(origin == 5){
+                            $('.mouse_scroll1').fadeOut();
+                            
+                            $('.zoomBox4').removeClass('zoomIn4');
+                            
+                            $('.slideBox01_6').removeClass('fadeInRight6');
+                            
+                        }else if(origin == 6){
+                            $('.mouse_scroll1').fadeOut();
+                            
+                            $('.slideBox01_6').removeClass('fadeInRight6');
+                            
+                            $('.section8_wrap').removeClass('fadeIn8');
+                            $('.text_wrap8_2').removeClass('fadeIn8_2');
+                            $('.text_wrap8_1').removeClass('fadeOut8');
+                            
+                            $('.fadeBox9_2').removeClass('fadeIn9');
+                            
+                        }else if(origin == 7){
+                            $('.mouse_scroll1').fadeOut();
+                            
+                            $('.slideBox01_6').removeClass('fadeInRight6');
+                            
+                            $('.section8_wrap').removeClass('fadeIn8');
+                            $('.text_wrap8_2').removeClass('fadeIn8_2');
+                            $('.text_wrap8_1').removeClass('fadeOut8');
+                            
+                            $('.fadeBox9_2').removeClass('fadeIn9');
+                            
+                        }else if(origin == 8){  
+                            $('.mouse_scroll1').fadeOut();
+                            
+                            $('.section8_wrap').removeClass('fadeIn8');
+                            $('.text_wrap8_2').removeClass('fadeIn8_2');
+                            $('.text_wrap8_1').removeClass('fadeOut8');
+                            
+                            $('.fadeBox9_2').removeClass('fadeIn9');
+                            
+                        }
+                        
+                    }
+                    /* //현재 페이지 떠난후 효과 */
+                    /****** //200921 수정 ******/ 
+                });
+            }
+            /* //풀페이지 옵션 스크립트 */
+        });
+    </script>
+    
+    <!--SNS스크립트-->
+    <script type="text/javascript">
+        function jsShareSns(type, titleParam) {
+            
+            var sns_url = document.URL;
+            var cnrsUrl = document.URL;
+            //var sns_url = "http://www.beanpole.com/app.good.GoodAction.getGoodDetail.top?style_no=2015051445151&input_type=57030&ctg_id=50610&topctg_id=10006";
+            var sns_media = $('[name=og_image]').attr("content");
+            var sns_title = $('[name=og_title]').attr("content");
+            if(titleParam != undefined && titleParam != ''){
+                sns_title = titleParam;
+                sns_title = sns_title.replace('`','\'');
+            } else {
+                sns_title = sns_title.toString().replace('`','\'');
+            }
+            //sns_title = sns_title.toString().replace('`','\'');
+            sns_title = encodeURIComponent(sns_title);
+            var cnrsSnsCd ='';
+            if (type == 'facebook') {
+                cnrsSnsCd = 'FACEBUK';
+                sns_url = encodeURIComponent(sns_url);
+                window.open("http://www.facebook.com/sharer.php?u=" + sns_url, "FaceBook", "height=500, width=620, scrollbars=yes");
+            } else if (type == 'twitter') {
+                cnrsSnsCd = 'TWTR';
+                sns_url = encodeURIComponent(sns_url);
+                //window.open("https://twitter.com/intent/tweet?text=" + sns_title+"&source=webclient", "Twitter", "height=500, width=620, scrollbars=yes");
+                window.open("http://twitter.com/home?status=" + sns_title + " " + sns_url);
+            } else if (type == 'pinterest') {
+                cnrsSnsCd = 'PNTRST';
+                sns_media = encodeURIComponent(sns_media);
+                sns_url = encodeURIComponent(sns_url);
+                window.open("http://www.pinterest.com/pin/create/button/?url="+sns_url+"&media="+sns_media+"&description="+sns_title, "Pinterest", "height=500, width=740, scrollbars=yes");
+            }
+            else if(type == 'kakaostory'){
+                cnrsSnsCd = 'KKOST';
+                Kakao.Story.share({
+                    url: sns_url
+                });
+            }
+            
+            var cnrsType = '';
+            var godNo ='';
+            var evtNo ='';
+            var strndSn ='';
+            var promtSn ='';
+            var snsFlag = false;
+            if(cnrsUrl.indexOf('event/') > -1 ){
+                //이벤트 템플릿
+                evtNo = urlPattern('event/');
+                snsFlag = true;
+            }else if(cnrsUrl.indexOf('singleEvent/') > -1 ){
+                //싱글이벤트
+                evtNo = urlPattern('singleEvent/');
+                snsFlag = true;
+            }else if(cnrsUrl.indexOf('special/') > -1 ){
+                //기획전
+                promtSn =urlPattern('special/');
+                snsFlag = true;
+            }else if(cnrsUrl.indexOf('strend/') > -1 ){
+                //strend
+                strndSn = urlPattern('strend/');
+                snsFlag = true;
+            }else if(cnrsUrl.indexOf('/good') > -1 ){
+                //strend
+                godNo =urlPattern('/good');
+                snsFlag = true;
+            }
+            
+            if(snsFlag){
+                
+                if(cnrsUrl.indexOf('?') > -1){
+                    cnrsUrl = cnrsUrl.substring(0,cnrsUrl.indexOf('?'));
+                }
+                
+                $.ajax({
+                    type : "GET",
+                    dataType : "json",
+                    async : true,
+                    url : '/public/singleEvent/snscnrshist.json',
+                    data : $.param({'${_csrf.parameterName}' : '${_csrf.token}',
+                                    'cnrsSnsCd' :cnrsSnsCd,
+                                    'cnrsUrl' : cnrsUrl,
+                                    'evtNo' :evtNo,
+                                    'promtSn' :promtSn,
+                                    'strndSn' :strndSn,
+                                    'godNo' :godNo
+                    }),
+                    
+                    success : function(data) {
+                        
+                    },
+                    error: function(xhr) {
+                        
+                    }
+                });
+            }
+        }
+    </script>
+    <!--//SNS스크립트-->
+    
+    <div id="BK-online-200831">
+        
+        <!-------- 세번째 페이지 동영상 팝업 시작 --------->
+        <div class="videoPopUp3_popup">
+            <div class="videoBox3_popup">
+                <div class="vodBox3_popup">
+                    <div class="vodIn3_popup">
+                        <iframe id="video-player3_2" width="100%" height="100%" src="https://www.youtube.com/embed/VY3Q2A4zss8?rel=0&loop=1&autoplay=0&playlist=VY3Q2A4zss8&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>   
+            <div class="videoPopUp_closeBtn3">
+                <img src="img/m_MVIO_190620_FullPage_POPUP_videopopup_closeBtn.png" alt="" class="img" border="0" /> 
+            </div>                  
+        </div>
+        <!-------- 세번째 페이지 동영상 팝업 끝 --------->
+        
+        <!--상단메뉴-->
+        <div class="topMenu">
+            <div class="menu_img1">
+                <a href="javascript:void(0);">
+                    <img src="img/ES_200818_FullPage_topMenu01.jpg" alt="" border="0"/>
+                </a>
+            </div>
+            
+            <div class="menu_img2">
+                <img src="img/ES_200818_FullPage_topMenu02.jpg" alt="" border="0"/>
+                <a href="javascript:void(0);" class="snsBtn1" style="width:60px; height:50px; position:absolute; right:38px; top:10px;"></a>
+            </div>
+            
+            <div class="menu_SNSimg">
+                <img src="img/ES_200818_FullPage_topMenu_SNS.jpg" alt="" border="0"/>
+                
+                <div id="divSnsShare" class="set-right">
+                    <i class="SnsShareBox">
+                        <a href="javascript:void(0);" class="kakaotalk_SNS">
+                            <img class="SnsBtn01" src="img/ES_200818_FullPage_topMenu_SNS1.jpg" alt="" border="0"/>
+                        </a>
+                        <a href="javascript:void(0);" class="facebook_SNS"><!-- onclick="javascript:jsShareSns('facebook');" -->
+                            <img class="SnsBtn02" src="img/ES_200818_FullPage_topMenu_SNS2.jpg" alt="" border="0"/>
+                        </a>
+                        <a href="javascript:void(0);" class="twitter_SNS"><!-- onclick="javascript:jsShareSns('twitter');" -->
+                            <img class="SnsBtn03" src="img/ES_200818_FullPage_topMenu_SNS3.jpg" alt="" border="0"/>
+                        </a>
+                        <a href="javascript:void(0);" class="pinterest_SNS"><!-- onclick="javascript:jsShareSns('pinterest');" -->
+                            <img class="SnsBtn04" src="img/ES_200818_FullPage_topMenu_SNS4.jpg" alt="" border="0"/>
+                        </a>
+                        <a href="javascript:void(0);" onclick="javascript:clipboard(); return false;" class="URL">
+                            <img class="SnsBtn05" src="img/ES_200818_FullPage_topMenu_SNS5.jpg" alt="" border="0"/>
+                        </a>
+                        <input id="url" style="position:absolute; top:-9999em;" readonly="readonly"/>
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="layer_clip" style="display: none;">
+            <span>URL이 복사되었습니다.</span>
+        </div>
+        
+        <!--URL복사스크립트-->
+        <script>
+            /***현재 URL 복사 input이나 textrarea가 있어야 가능***/
+            function clipboard() {
+                var $temp = $("#url");
+                var url = document.URL;
+                
+                $temp.val(url).select();
+                
+                try {
+                    document.execCommand("copy");
+                    $(".layer_clip").fadeIn(300);
+                    setTimeout(function(){
+                        $(".layer_clip").fadeOut(300);
+                    },2000);
+                    $temp.val("");
+                } catch (err) {
+                    openAlert('이 브라우저는 지원하지 않습니다.');
+                }
+            }
+        </script>
+        <!--//URL복사스크립트-->
+        <!--//상단메뉴-->
+        
+        <!-- 풀페이지 시작 -->
+        <div id="fullpage">
+            
+            <!-- 첫번째 페이지 -->
+            <div class="section" id="section1" data-anchor="page01">
+                <div class="page page1">
+                    <!-------- 인트로 로고 시작 --------->
+                    <div class="introBox1">
+                        <div class="logoimg1_1 animate__animated" data-animate="animate__fadeIn" data-duration="1.5s" data-delay="0.3s" data-offset="0" data-iteration="1">
+                            <img src="img/BK_200831_FullPage_LOGO_1.png" alt="" border="0" />
+                        </div>
+                        <div class="logoimg1_2 animate__animated" data-animate="animate__fadeIn" data-duration="1.5s" data-delay="0.7s" data-offset="0" data-iteration="1">
+                            <img src="img/BK_200831_FullPage_LOGO_2.png" alt="" border="0" />
+                        </div>
+                    </div>
+                    <!-------- 인트로 로고 끝 --------->
+                    
+                    <!-------- 페이드 로고 시작 --------->
+                    <div class="fadeBox1_1">
+                        <div class="fadeBox1_2"></div>
+                    </div>
+                    
+                    <div class="fadelogoBox1_1">
+                        <div class="fadelogoimg1_1">
+                            <img src="img/BK_200831_FullPage_White_LOGO_1.png" alt="" border="0" />
+                        </div>
+                    </div>
+                    <!-------- 페이드 로고 끝 --------->
+                </div>
+                
+                <!-------- 밑으로 움직이는 화살표 이미지 시작 --------->
+                <div class="mouse_scroll1 scroll1" style="z-index:500;">
+                    <img src="img/ES_200818_FullPage_v_pc_white.png" alt="" border="0"/>
+                </div>
+                <!-------- 밑으로 움직이는 화살표 이미지 끝 --------->
+            </div>
+            <!-- //첫번째 페이지 -->
+            
+            <!-- 두번째 페이지-->
+            <div class="section" id="section2" data-anchor="page02">
+                <div class="page page2">
+                    <!-------- 배경 줌인 시작 --------->
+                    <div class="zoomBox2"></div>
+                    <!-------- 배경 줌인 끝 ---------> 
+                    
+                    <!-------- 텍스트 시작 --------->
+                    <div class="text_wrap2">
+                        <div class="zoomlogoimg2 animate__animated" data-animate="animate__fadeInUp" data-duration="1s" data-delay="0.1s" data-offset="0" data-iteration="1">
+                            <img src="img/BK_200831_FullPage_White_LOGO_1.png" alt="" border="0" />
+                        </div>
+                        <p class="text2_1 textAll fontBM animate__animated" data-animate="animate__fadeInUp" data-duration="1.5s" data-delay="0.4s" data-offset="0" data-iteration="1">
+                            08. SEP. 2020
+                        </p>
+                    </div>
+                    <!-------- 텍스트 끝 --------->
+                </div>
+                
+                <!-------- 밑으로 움직이는 화살표 이미지 시작 --------->
+                <div class="mouse_scroll1 scroll2" style="z-index:500;">
+                    <img src="img/ES_200818_FullPage_v_pc_white.png" alt="" border="0"/>
+                </div>
+                <!-------- 밑으로 움직이는 화살표 이미지 끝 --------->
+            </div>
+            <!-- //두번째 페이지 -->
+            
+            <!-- 세번째 페이지-->
+            <div class="section" id="section3" data-anchor="page03">
+                <div class="page page3 videoBG3">
+                    <!-------- 동영상 시작 --------->
+                    <div class="videoImg3">
+                        <div class="videoBtn3 animate__animated" data-animate="animate__fadeInUp" data-duration="1.5s" data-delay="0.1s" data-offset="0" data-iteration="1">
+                            <img src="img/BK_200831_FullPage_videoBtn_3.png" alt="" border="0" />
+                        </div>
+                    </div>
+                    <!-------- 동영상 끝 --------->
+                </div>
+                
+                <!-------- 밑으로 움직이는 화살표 이미지 시작 --------->
+                <div class="mouse_scroll1 scroll3" style="z-index:500;">
+                    <img src="img/ES_200818_FullPage_v_pc_white.png" alt="" border="0"/>
+                </div>
+                <!-------- 밑으로 움직이는 화살표 이미지 끝 --------->
+            </div>
+            <!-- //세번째 페이지 -->
+            
+            <!-- 네번째 페이지-->
+            <div class="section" id="section4" data-anchor="page04">
+                <div class="page page4">
+                    <!-------- 배경 줌인 시작 --------->
+                    <div class="zoomBox4"></div>
+                    <!-------- 배경 줌인 끝 ---------> 
+                    
+                    <!-------- 텍스트 시작 --------->
+                    <div class="text_wrap4">
+                        <div class="text_wrap4_1">
+                            <p class="text4_1 textAll fontBM animate__animated" data-animate="animate__fadeInLeft" data-duration="1.5s" data-delay="0.1s" data-offset="0" data-iteration="1">
+                                _[언더바]는
+                            </p>
+                            <p class="text4_2 textAll fontBM animate__animated" data-animate="animate__fadeInLeft" data-duration="1.5s" data-delay="0.3s" data-offset="0" data-iteration="1">
+                                공백을 의미하는
+                            </p>
+                            <p class="text4_3 textAll fontBM animate__animated" data-animate="animate__fadeInLeft" data-duration="1.5s" data-delay="0.5s" data-offset="0" data-iteration="1">
+                                기호입니다.
+                            </p>
+                            <p class="text4_4 textAll fontBR animate__animated" data-animate="animate__fadeInLeft" data-duration="1.5s" data-delay="0.7s" data-offset="0" data-iteration="1">
+                                BRAND ABOUT
+                                <span class="underbar4" style="display:inline-block; position:relative; width:40px; margin-left:5px; margin-bottom:-1px; background-color:#111; border-bottom:8px solid #111;"></span>
+                            </p>
+                        </div>
+                        <div class="text_wrap4_2">
+                            <p class="text4_5 textAll fontRR animate__animated" data-animate="animate__fadeInRight" data-duration="1.5s" data-delay="0.9s" data-offset="0" data-iteration="1">
+                                B_ 는 BEAKER의 다양한 경계 속에서
+                            </p>
+                            <p class="text4_6 textAll fontRR animate__animated" data-animate="animate__fadeInRight" data-duration="1.5s" data-delay="1.1s" data-offset="0" data-iteration="1">
+                                우리가 해석한 현 시대의 감성을 담아내는 
+                            </p>
+                            <p class="text4_7 textAll fontRR animate__animated" data-animate="animate__fadeInRight" data-duration="1.5s" data-delay="1.3s" data-offset="0" data-iteration="1">
+                                Blank 공백의 의미를 담고 있습니다.  
+                            </p>
+                        </div>
+                    </div>
+                    <!-------- 텍스트 끝 --------->
+                </div>
+                
+                <!-------- 밑으로 움직이는 화살표 이미지 시작 --------->
+                <div class="mouse_scroll1 scroll4" style="z-index:500;">
+                    <img src="img/ES_200818_FullPage_v_pc_gray.png" alt="" border="0"/>
+                </div>
+                <!-------- 밑으로 움직이는 화살표 이미지 끝 --------->
+            </div>
+            <!-- //네번째 페이지 -->
+            
+            <!-- 다섯번째 페이지 -->
+            <div class="section" id="section5" data-anchor="page05">
+                <div class="page page5">
+                    <!-------- 텍스트 시작 --------->
+                    <div class="text_wrap5">
+                        <p class="text5_1 textAll fontRR animate__animated" data-animate="animate__fadeInUp" data-duration="1.5s" data-delay="0.1s" data-offset="0" data-iteration="1">
+                            우리는 기존 관습에 구애받지 않는 
+                        </p>
+                        <p class="text5_2 textAll fontRR animate__animated" data-animate="animate__fadeInUp" data-duration="1.5s" data-delay="0.3s" data-offset="0" data-iteration="1">
+                            Borderless Essential을 지향합니다.
+                        </p>
+                    </div>
+                    <!-------- 텍스트 끝 --------->
+                    
+                    <!-------- 텍스트 시작 --------->
+                    <div class="gifWrap5">
+                        <div class="gifBox5 animate__animated" data-animate="animate__fadeInUp" data-duration="1.5s" data-delay="0.5s" data-offset="0" data-iteration="1">
+                            <img src="img/BK_200831_FullPage_GIF5.gif" alt="" border="0" />
+                        </div>
+                    </div>
+                    <!-------- 텍스트 끝 --------->
+                </div>
+                
+                <!-------- 밑으로 움직이는 화살표 이미지 시작 --------->
+                <div class="mouse_scroll1 scroll5" style="z-index:500;">
+                    <img src="img/ES_200818_FullPage_v_pc_white.png" alt="" border="0"/>
+                </div>
+                <!-------- 밑으로 움직이는 화살표 이미지 끝 --------->
+            </div>
+            <!-- //다섯번째 페이지 -->
+            
+            <!-- 200921 수정 -->
+            <!-- 여섯번째 페이지 -->
+            <div class="section" id="section6" data-anchor="page06">
+                <div class="page page6">
+                    <!-------- 배경 이미지 시작 --------->
+                    <div class="imgBox6">
+                        <div class="slideBox01_6">
+                            <ul class="slide01">
+                                <li class="slide06_1">
+                                </li>
+                                <li class="slide06_2">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-------- 배경 이미지 끝 ---------> 
+                    
+                    <!-------- 텍스트 시작 --------->
+                    <div class="text_wrap6">
+                        <div class="text_wrap6_1">
+                            <p class="text6_1 textAll fontBM animate__animated" data-animate="animate__fadeInLeft" data-duration="1.5s" data-delay="0.1s" data-offset="0" data-iteration="1">
+                                20 F/W
+                            </p>
+                            <p class="text6_3 textAll fontBM animate__animated" data-animate="animate__fadeInLeft" data-duration="1.5s" data-delay="0.7s" data-offset="0" data-iteration="1">
+                                RELATIONSHIP
+                            </p>
+                            <p class="text6_4 textAll fontBR animate__animated" data-animate="animate__fadeInLeft" data-duration="1.5s" data-delay="1.3s" data-offset="0" data-iteration="1">
+                                BRAND CONCEPT
+                                <span class="underbar6" style="display:inline-block; position:relative; width:40px; margin-left:5px; margin-bottom:-1px; background-color:#fff; border-bottom:8px solid #fff;"></span>
+                            </p>
+                        </div>
+                        <div class="text_wrap6_2">
+                            <p class="text6_5 textAll fontRR animate__animated" data-animate="animate__fadeInRight" data-duration="1.5s" data-delay="1.5s" data-offset="0" data-iteration="1">
+                                ‘관계’ 에 대한 이야기입니다.
+                            </p>
+                            <p class="text6_6 textAll fontRR animate__animated" data-animate="animate__fadeInRight" data-duration="1.5s" data-delay="2.1s" data-offset="0" data-iteration="1">
+                                톤 다운된 컬러감과 여유있는 젠더리스 실루엣으로 
+                            </p>
+                            <p class="text6_7 textAll fontRR animate__animated" data-animate="animate__fadeInRight" data-duration="1.5s" data-delay="2.6s" data-offset="0" data-iteration="1">
+                                관습을 넘어선 관계를 재정의합니다.  
+                            </p>
+                        </div>
+                    </div>
+                    <!-------- 텍스트 끝 --------->
+                </div>
+                
+                <!-------- 밑으로 움직이는 화살표 이미지 시작 --------->
+                <div class="mouse_scroll1 scroll6" style="z-index:500;">
+                    <img src="img/ES_200818_FullPage_v_pc_white.png" alt="" border="0"/>
+                </div>
+                <!-------- 밑으로 움직이는 화살표 이미지 끝 --------->
+            </div>
+            <!-- //여섯번째 페이지 -->
+            
+            <!-- 여덟번째 페이지-->
+            <div class="section" id="section8" data-anchor="page07">
+                <div class="page page8">
+                    <!-------- 배경 이미지 시작 --------->
+                    <div class="imgBox8"></div>
+                    <!-------- 배경 이미지 끝 ---------> 
+                    
+                    <!-------- 배경 이미지 시작 --------->
+                    <div class="section8_wrap">
+                        <div class="section8_bg">
+                            <div class="slideBox02 animate__animated" data-animate="animate__fadeIn" data-duration="1s" data-delay="2s" data-offset="0" data-iteration="1">
+                                <ul class="slide02">
+                                    <li>
+                                        <img src="img/BK_200831_FullPage_Black_Lookbook8.png" alt="" class="img" border="0" />
+                                    </li>  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------- 배경 이미지 끝 ---------> 
+                    
+                    <!-------- 텍스트 시작 --------->
+                    <div class="text_wrap8">
+                        <div class="text_wrap8_1">
+                            <div class="logoimg8 animate__animated" data-animate="animate__fadeInUp" data-duration="1s" data-delay="0.1s" data-offset="0" data-iteration="1">
+                                <img src="img/BK_200831_FullPage_White_LOGO_1.png" alt="" border="0" />
+                            </div>
+                            <p class="text8_1 textAll fontBR animate__animated" data-animate="animate__fadeInUp" data-duration="1.5s" data-delay="0.4s" data-offset="0" data-iteration="1">
+                                20 F/W LOOKBOOK
+                            </p>
+                        </div>
+                        
+                        <div class="text_wrap8_2">
+                            <p class="text8_2 textAll fontBR">
+                                20 F/W LOOKBOOK
+                            </p>
+                        </div>
+                    </div>
+                    <!-------- 텍스트 끝 --------->
+                </div>
+                
+                <!-------- 밑으로 움직이는 화살표 이미지 시작 --------->
+                <div class="mouse_scroll1 scroll8" style="z-index:500;">
+                    <img src="img/ES_200818_FullPage_v_pc_white.png" alt="" border="0"/>
+                </div>
+                <!-------- 밑으로 움직이는 화살표 이미지 끝 --------->
+            </div>
+            <!-- //여덟번째 페이지 -->
+            
+            <!-- 아홉번째 페이지-->
+            <div class="section" id="section9" data-anchor="page08">
+                <div class="page page9">
+                    <!-------- 배경 이미지 시작 --------->
+                    <div class="imgBox9">
+                        <div class="fadeBox9_1"></div>
+                        <div class="fadeBox9_2"></div>
+                    </div>
+                    <!-------- 배경 이미지 끝 ---------> 
+                    
+                    <!-------- 텍스트 시작 --------->
+                    <div class="text_wrap9">
+                        <div class="text_wrap9_1">
+                            <div class="logoimg9 animate__animated" data-animate="animate__fadeInUp" data-duration="1s" data-delay="0.5s" data-offset="0" data-iteration="1">
+                                <img src="img/BK_200831_FullPage_White_LOGO_2.png" alt="" border="0" />
+                            </div>
+                            <p class="text9_1 textAll fontBR animate__animated" data-animate="animate__fadeInUp" data-duration="1.5s" data-delay="0.9s" data-offset="0" data-iteration="1">
+                                <a href="javascript:void(0);">SHOP NOW</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-------- 텍스트 끝 --------->
+                    
+                </div>
+            </div>
+            <!-- //아홉번째 페이지 -->
+            <!-- //200921 수정 -->
+            
+        </div>
+        <!-- //풀페이지 끝 -->
+        
+    </div>
+    <!-- //200831 -->
+    <!-- 여기까지 복사해서 붙여주세요 -->
+    
+    <!-- daum -->
+    <!-- Withpang Tracker v3.0 -->
+    <!-- Google Tag Manager (noscript) -->
+</body>
+</html>
