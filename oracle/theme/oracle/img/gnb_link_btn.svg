@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <line id="선_1" data-name="선 1" x1="7" transform="translate(0 1.5)" fill="none" stroke="#344a3c" stroke-width="1"/>
+  <line id="선_2" data-name="선 2" y2="14" transform="translate(0.5 1)" fill="none" stroke="#344a3c" stroke-width="1"/>
+  <line id="선_3" data-name="선 3" x2="14" transform="translate(0 14.5)" fill="none" stroke="#344a3c" stroke-width="1"/>
+  <line id="선_4" data-name="선 4" y1="7" transform="translate(13.5 8)" fill="none" stroke="#344a3c" stroke-width="1"/>
+  <line id="선_5" data-name="선 5" x1="7" y2="7" transform="translate(7.5 0.5)" fill="none" stroke="#344a3c" stroke-width="1"/>
+  <line id="선_6" data-name="선 6" y1="5" transform="translate(14.5)" fill="none" stroke="#344a3c" stroke-width="1"/>
+  <line id="선_7" data-name="선 7" x2="5" transform="translate(10 0.5)" fill="none" stroke="#344a3c" stroke-width="1"/>
+</svg>

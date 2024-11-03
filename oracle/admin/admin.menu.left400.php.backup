@@ -1,0 +1,250 @@
+<?php
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+include_once('./_common.php');
+
+?>
+<ul id="admin_menu_left_title">
+	컨텐츠관리
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 300) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/contents/menu_config.php">
+		<?php if ($menu_left_code == 300) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		메뉴관리
+	</a>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 301) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=online_consulting">
+		<?php if ($menu_left_code == 301) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		온라인상담
+	</a>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 302) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/contents/reservation_config.php">
+		<?php if ($menu_left_code == 302) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		온라인예약
+	</a>
+	<?php if ($menu_left_code == 302) { ?>
+	<div class="admin_menu_left_sub2">
+		<ul>
+			<?php if ($menu_left_sub_code == 30201) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/contents/reservation_config.php">
+				예약기본설정
+			</a>
+		</ul>
+		<ul>
+			<?php if ($menu_left_sub_code == 30202) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/contents/reservation_management.php">
+				예약관리
+			</a>
+		</ul>
+		<ul>
+			<?php if ($menu_left_sub_code == 30203) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/contents/reservation_holiday.php">
+				예약휴일관리
+			</a>
+		</ul>
+		<ul>
+			<?php if ($menu_left_sub_code == 30204) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/contents/reservation_subject.php">
+				예약과목관리
+			</a>
+		</ul>
+		<ul>
+			<?php if ($menu_left_sub_code == 30205) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/contents/reservation_healthcare.php">
+				예약의료진관리
+			</a>
+		</ul>
+	</div>
+	<?php } ?>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 303) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=be_af01">
+		<?php if ($menu_left_code == 303) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		전후사진
+	</a>
+	<?php if ($menu_left_code == 303) { ?>
+	<div class="admin_menu_left_sub2">
+		<ul>
+			<?php if ($menu_left_sub_code == 30301) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=be_af01">
+				전후사진-기본
+			</a>
+		</ul>
+		<ul>
+			<?php if ($menu_left_sub_code == 30302) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=be_af02">
+				전후사진-2컷
+			</a>
+		</ul>
+		<ul>
+			<?php if ($menu_left_sub_code == 30303) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=be_af03">
+				전후사진-3컷
+			</a>
+		</ul>
+	</div>
+	<?php } ?>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 304) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=thumbnail01">
+		<?php if ($menu_left_code == 304) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		썸네일 게시판
+	</a>
+	<?php if ($menu_left_code == 304) { ?>
+	<div class="admin_menu_left_sub2">
+		<ul>
+			<?php if ($menu_left_sub_code == 30401) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=thumbnail01">
+				썸네일 게시판_1
+			</a>
+		</ul>
+		<ul>
+			<?php if ($menu_left_sub_code == 30402) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=thumbnail02">
+				썸네일 게시판_2
+			</a>
+		</ul>
+	</div>
+	<?php } ?>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 305) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=event&sca=진행중+이벤트">
+		<?php if ($menu_left_code == 305) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		이벤트
+	</a>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 306) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=faq">
+		<?php if ($menu_left_code == 306) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		FAQ 게시판
+	</a>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 307) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=db_collect">
+		<?php if ($menu_left_code == 307) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		DB게시판
+	</a>
+	<?php if ($menu_left_code == 307) { ?>
+	<div class="admin_menu_left_sub2">
+		<ul>
+			<?php if ($menu_left_sub_code == 30701) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=db_collect">
+				DB게시판
+			</a>
+		</ul>
+		<ul>
+			<?php if ($menu_left_sub_code == 30702) { ?>
+				<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted3.png" alt="●"/>
+			<?php } ?>
+			<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=manager">
+				담당자관리
+			</a>
+		</ul>
+	</div>
+	<?php } ?>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 308) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/contents/popup.php">
+		<?php if ($menu_left_code == 308) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		팝업관리
+	</a>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 309) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=kakao">
+		<?php if ($menu_left_code == 309) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		카톡, 문자게시판
+	</a>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 310) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=realstory">
+		<?php if ($menu_left_code == 310) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		리얼스토리
+	</a>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 311) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=broadcast">
+		<?php if ($menu_left_code == 311) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		방송게시판
+	</a>
+</ul>
+<ul class="admin_menu_left_sub <?php if ($menu_left_code == 312) echo "admin_menu_left_on"; ?>">
+	<a href="<?php echo G5_ADMIN_URL ?>/bbs/board.php?bo_table=reply">
+		<?php if ($menu_left_code == 312) { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted2.png" alt="●"/>
+		<?php } else { ?>
+			<img src="<?php echo G5_ADMIN_URL ?>/img/admin_left_menu_dotted.png" alt="●"/>
+		<?php } ?>
+		댓글게시판
+	</a>
+</ul>
