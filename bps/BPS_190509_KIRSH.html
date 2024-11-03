@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SSF SHOP - 삼성물산 패션부문 온라인 공식몰</title>
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    
+    <!-- 190509 -->
+    <style type="text/css">
+        /********** 기본 CSS **********/
+        .event01{position:relative; width:960px; overflow:hidden; margin:0 auto;}
+        .event01 a{display:block;}	
+        .event01 img{width:auto; display:block;}
+        
+        .event01 .box{position:relative;}
+        /********** 기본 CSS **********/
+        
+        /********** 팝콘효과 CSS **********/
+        .tic1{
+            margin: 0; padding-left: 0%; z-index: 1; 
+            -webkit-animation: 0.8s forwards 0.8s;
+            -o-animation: 0.8s forwards 0.8s;
+            -moz-animation: 0.8s forwards 0.8s;
+            animation: 0.8s forwards 0.8s; 
+            animation-name: ticker1;
+        }
+        @keyframes ticker1 {
+            0% {transform: scale(0.0,0.0); -webkit-transform: scale(0.0,0.0);}   
+            100% {transform: scale(1.0,1.0); -webkit-transform: scale(1.0,1.0);}   
+        }
+        
+        .box_Cherry1{position:absolute; top:355px; left:168px; width:70px; transform: scale(0.0,0.0); -webkit-transform: scale(0.0,0.0);}
+        .box_Cherry2{position:absolute; top:416px; left:100px; width:70px; transform: scale(0.0,0.0); -webkit-transform: scale(0.0,0.0);}
+        .box_Cherry3{position:absolute; top:416px; left:239px; width:70px; transform: scale(0.0,0.0); -webkit-transform: scale(0.0,0.0);}
+        /********** 팝콘효과 CSS **********/
+        
+        /********** 동영상 CSS **********/
+        .event01 .videoBox{position:relative; }
+        .event01 .vodBox{position:relative; }
+        /********** 동영상 CSS **********/
+        
+        /********** 텍스트 흐르는 효과 CSS **********/
+        .event01 .boxleft{position:absolute; top:0; left:0; width:480px; overflow:hidden;}
+        .event01 .boxright{position:absolute; top:0; right:0; width:480px; overflow:hidden;}
+        .event01 .boxright .slideBox01{position:absolute; top:19px; right:0px; width:727px; z-index:5;}
+        .event01 .boxright .slideBox02{position:absolute; top:660px; left:0px; width:727px; z-index:5;}
+        /********** 텍스트 흐르는 효과 CSS **********/
+        
+        /********** 대각선 체리 흐르는 효과 CSS **********/
+        .rotatebox {position:relative; width:960px; height:700px; overflow:hidden;}
+		.rotate {transform: rotate( -45deg );}
+        .event01 .slideBox03{position:absolute; top:-420px; left:-500px; width:2568px; z-index:5;}
+        .boximg{position: absolute; top:0; left:0; width:960px; z-index:5;}
+        /********** 대각선 체리 흐르는 효과 CSS **********/
+        
+        /********** 하단룩북 CSS **********/
+        .event01 .slideBox04{position:relative; z-index:5;}
+        .event01 .slideBox04 .bx-prev{display:block; position:absolute; left:60px; top:50%; width:40px; height:78px; background:url("img/BPS_190509_KIRSH_prev.png") no-repeat left; text-indent:-9999px; z-index:500; transform:translateY(-50%);}
+        .event01 .slideBox04 .bx-next{display:block; position:absolute; right:60px; top:50%; width:40px; height:78px; background:url("img/BPS_190509_KIRSH_next.png") no-repeat right; text-indent:-9999px; z-index:500; transform:translateY(-50%);}
+        .event01 .slideBox04 .slide03{position:relative; margin-left:720px;  }
+        .event01 .slideBox04 .slide03 li{margin-left:-480px;}
+        .event01 .slideBox04 .slide03 li img{width:480px; height:684px; }
+        .event01 .slideBox04  #leftdimm{position:absolute; width:240px; height:100%; left:0; top:0; background:#000; opacity:0.7} 
+        .event01 .slideBox04  #rightdimm{position:absolute; width:240px; height:100%; right:0; top:0; background:#000; opacity:0.7} 
+        /********** 하단룩북 CSS **********/
+        
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            
+            /********** 팝콘효과 CSS **********/
+            $('.box_Cherry1, .box_Cherry2, .box_Cherry3').on('inview', function (event, isInView, visiblePartX, visiblePartY) {
+                if (isInView) {
+                    $(this).stop().addClass('tic1');
+                }
+            });
+            /********** 팝콘효과 CSS **********/
+            
+            /********** 텍스트 흐르는 효과 CSS **********/
+            $('.slide01').bxSlider({
+                speed: 20000,
+                ticker: true
+            });
+            
+            $('.slide02').bxSlider({
+                speed: 20000,
+                ticker: true,
+                autoDirection:'prev'
+            });
+            /********** 텍스트 흐르는 효과 CSS **********/
+            
+            /********** 하단룩북 CSS **********/
+            $('.slide03').bxSlider({
+                mode: 'horizontal',
+                auto: true,
+                pager: false,
+                controls: true,
+                autoHover: true,
+                pause:3500,
+                speed:800
+            });
+            /********** 하단룩북 CSS **********/
+            
+        });
+    </script>
+    
+    <div class="event01">
+        
+        <div class="box">
+            <img src="img/BPS_190509_KIRSH01.jpg" alt="" usemap="#Map" border="0" />
+            <map name="Map">
+              <area onfocus="this.blur()" shape="rect" coords="595,119,829,338" href="javascript:void(0);">
+              <area onfocus="this.blur()" shape="rect" coords="616,337,804,416" href="javascript:void(0);">
+            </map>
+        </div>
+        
+        <!---------- 팝콘 효과 시작 ----------->
+        <div class="box">
+            <img src="img/BPS_190509_KIRSH02.jpg" alt="" border="0" />  
+            
+            <div class="box_Cherry1">
+                <img src="img/BPS_190509_KIRSH_Cherry.png" alt="" border="0" />         
+            </div>
+            <div class="box_Cherry2" style="animation-delay:0.8s;">
+                <img src="img/BPS_190509_KIRSH_Cherry.png" alt="" border="0" />         
+            </div>
+            <div class="box_Cherry3" style="animation-delay:1.3s;">
+                <img src="img/BPS_190509_KIRSH_Cherry.png" alt="" border="0" />         
+            </div>
+        </div>
+        <!---------- 팝콘 효과 끝 ----------->
+        
+        <!---------- 동영상 시작 ----------->
+        <div class="videoBox">
+            <div class="vodBox">
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/u2tMY0MZkC0?rel=0&loop=1&autoplay=1&playlist=u2tMY0MZkC0&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!---------- 동영상 끝 ----------->
+        
+        <div class="box">
+            <img src="img/BPS_190509_KIRSH03.jpg" alt="" usemap="#Map2" border="0" />
+            <map name="Map2">
+              <area onfocus="this.blur()" shape="rect" coords="492,707,763,732" href="javascript:void(0);">
+              <area onfocus="this.blur()" shape="rect" coords="538,251,926,505" href="javascript:void(0);">
+              <area onfocus="this.blur()" shape="rect" coords="137,228,345,415" href="javascript:void(0);">
+              <area onfocus="this.blur()" shape="rect" coords="111,529,332,723" href="javascript:void(0);">
+              
+			  <area onfocus="this.blur()" shape="rect" coords="491,733,762,759" href="javascript:void(0);">
+              <area onfocus="this.blur()" shape="rect" coords="651,506,920,691" href="javascript:void(0);">
+            </map>         
+        </div>
+        
+        <!---------- 텍스트 흐르는 효과 시작 ----------->
+        <div class="box">
+            <img src="img/BPS_190509_KIRSH04_bg.jpg" alt="" border="0" />
+            
+            <div class="boxleft">
+                <img src="img/BPS_190509_KIRSH04.jpg" alt="" usemap="#Map3" border="0" />
+                <map name="Map3">
+                  <area onfocus="this.blur()" shape="rect" coords="105,145,419,415" href="javascript:void(0);">
+                  <area onfocus="this.blur()" shape="rect" coords="63,414,385,681" href="javascript:void(0);">
+                </map>         
+            </div>
+            
+            <div class="boxright">
+                <img src="img/BPS_190509_KIRSH05.jpg" alt="" usemap="#Map4" border="0" />
+                <map name="Map4">
+                  <area onfocus="this.blur()" shape="rect" coords="118,146,419,279" href="javascript:void(0);">
+                  <area onfocus="this.blur()" shape="rect" coords="70,279,365,444" href="javascript:void(0);">
+                </map>         
+                
+                <div class="slideBox01">
+                    <ul class="slide01">
+                        <li>
+                            <img src="img/BPS_190509_KIRSH_text.png" alt="" border="0" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="slideBox02">  
+                    <ul class="slide02">
+                        <li>
+                            <img src="img/BPS_190509_KIRSH_text.png" alt="" border="0" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---------- 텍스트 흐르는 효과 끝 ----------->
+        
+        <div class="box">
+            <img src="img/BPS_190509_KIRSH06.jpg" alt="" usemap="#Map5" border="0" />
+            <map name="Map5">
+              <area onfocus="this.blur()" shape="rect" coords="77,527,410,574" href="javascript:void(0);">
+              <area onfocus="this.blur()" shape="rect" coords="238,177,575,453" href="javascript:void(0);">
+              
+              <area onfocus="this.blur()" shape="rect" coords="567,527,854,575" href="javascript:void(0);">
+              <area onfocus="this.blur()" shape="rect" coords="572,114,807,394" href="javascript:void(0);">
+            </map>         
+        </div>
+        
+        <!---------- 대각선 체리 흐르는 효과 시작 ----------->
+        <div class="rotatebox">
+			<div class="rotate">
+				<div class="slideBox03">
+					<ul class="slide01">
+						<li>
+							<img src="img/BPS_190509_KIRSH_Cheerrybg.jpg" alt="" border="0" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="boximg">
+                <a onfocus="this.blur()" href="javascript:void(0);"><img src="img/BPS_190509_KIRSH07.png" alt="" border="0" /></a>
+            </div>
+		</div>
+        <!---------- 대각선 체리 흐르는 효과 끝 ----------->
+        
+        <div class="box">
+            <img src="img/BPS_190509_KIRSH08.jpg" alt="" border="0" />         
+        </div>
+        
+        <!---------- 하단 룩북 시작 ----------->
+        <div class="slideBox04">
+            <ul class="slide03">
+                <li>
+                    <img src="img/BPS_190509_KIRSH_1_1.jpg" alt="" border="0" />
+                </li>
+                <li>
+                    <img src="img/BPS_190509_KIRSH_1_2.jpg" alt="" border="0" />
+                </li>  
+                <li>
+                    <img src="img/BPS_190509_KIRSH_1_3.jpg" alt="" border="0" />
+                </li>
+                <li>
+                    <img src="img/BPS_190509_KIRSH_1_4.jpg" alt="" border="0" />
+                </li> 
+                <li>
+                    <img src="img/BPS_190509_KIRSH_1_5.jpg" alt="" border="0" />
+                </li>
+                <li>
+                    <img src="img/BPS_190509_KIRSH_1_6.jpg" alt="" border="0" />
+                </li> 
+                <li>
+                    <img src="img/BPS_190509_KIRSH_1_7.jpg" alt="" border="0" />
+                </li>
+                <li>
+                    <img src="img/BPS_190509_KIRSH_1_8.jpg" alt="" border="0" />
+                </li>               
+            </ul>
+            <div id="leftdimm"></div>
+            <div id="rightdimm"></div>
+        </div>
+        <!---------- 하단 룩북 끝 ----------->
+        
+    </div>
+    <!-- //190509 -->
+    
+</body>
+</html> 
